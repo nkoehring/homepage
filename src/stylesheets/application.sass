@@ -1,0 +1,145 @@
+!c_fg = #AAA
+!c_bg = #333
+!c_green = #0C0
+!c_lo = #686
+
+!page_width = 28em
+!inner_width = 87%
+!big = 1.5em
+!small = 0.7em
+!border_radius = 5px
+
+=border
+  border = 2px "solid" !c_green
+
+=menu_border_left
+  +border
+  border-top: none
+  border-left: none
+  -moz-border-radius-bottomright = !border_radius
+  -webkit-border-bottom-right-radius = !border_radius
+  border-bottom-right-radius = !border_radius
+  -moz-border-radius-bottomleft = !border_radius
+  -webkit-border-bottom-left-radius = !border_radius
+  border-bottom-left-radius = !border_radius
+
+=menu_border_right
+  +border
+  border-top: none
+  border-right: none
+  -moz-border-radius-bottomright = !border_radius
+  -webkit-border-bottom-right-radius = !border_radius
+  border-bottom-right-radius = !border_radius
+  -moz-border-radius-bottomleft = !border_radius
+  -webkit-border-bottom-left-radius = !border_radius
+  border-bottom-left-radius = !border_radius
+
+
+body
+  font: 17pt/22pt "Helvetica Neue", Arial, sans-serif
+  font-weight: bold
+  letter-spacing: -0.75pt
+  margin: 2em 2.3em
+  color = !c_fg
+  background-color = !c_bg
+
+
+h1
+  display: block
+  font-size: 1em
+  border-bottom = 1px "solid" !c_fg
+
+
+a
+  color = !c_lo
+  text-decoration: none
+  white-space: nowrap
+
+  &:visited
+    color = !c_lo
+
+  &:hover
+    color = !c_green
+
+
+.big
+  font-size = !big
+
+
+.centered
+  text-align: center
+
+
+.goback
+  font-size = !small
+  align: left
+  float: right
+  clear: all
+  font-weight: default
+
+
+.old
+  text-decoration: line-through
+
+
+#page
+  margin: 0 auto
+  margin-top: 2em
+  padding: 0
+  width = !page_width
+  border = 2px "solid" !c_green
+
+
+#inner
+  margin: 0 auto
+  width = !inner_width
+
+
+=menu_hover
+  height: 30px
+  line-height: 20px
+  a
+    display: block
+
+
+#head
+  margin: 0 auto
+  margin-bottom: 2em
+  padding: 0
+  ul
+    display: block
+    margin: 0
+    padding: 0
+    height: 30px
+    li
+      vertical-align: top
+      display: inline-block
+      width: 100px
+      height: 30px
+      line-height: 10px
+      margin: 0
+      div
+        padding: 0 5px
+        height: 10px
+        +menu_border_left
+        cursor: pointer
+      &:hover
+        div
+          +menu_hover
+      &.current
+        div
+          +menu_hover
+          cursor: none
+      a
+        display: none
+        height: 30px
+        text-align: center
+        padding-top: 12px
+        color: inherit
+    li.right
+      align: right
+      width: 150px
+      margin-left: 86px /* iiieks */
+      div
+        +menu_border_right
+

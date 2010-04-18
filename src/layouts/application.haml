@@ -1,0 +1,52 @@
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
+    %title
+      Lair of NKoehring
+    %meta{ :name => "author", :content => "Norman K\303\266hring" }
+    %meta{ :name => "DC.title", :content => "Norman K\303\266hring aka nkoehring" }
+    /
+      GeoURL
+    %meta{ :name => "ICBM", :content => "51.3333, 12.4167" }
+    %meta{ :name => "geo.position", :content => "51.3333; 12.4167" }
+    %meta{ :name => "geo.region", :content => "DE" }
+    %link{ :href => "mailto:me[at]nkoehring.de", :rel => "author" }
+    =stylesheets :media => :screen
+    -#%script{ :type => "text/javascript", :src => "/jquery.min.js" }
+
+  %body
+    #page
+      #inner
+        #head
+          %ul
+            -about_is_current = (current_page == "/index.html" ? "current" : "")
+            -work_is_current = (current_page == "/work.html" ? "current" : "")
+            -study_is_current = (current_page == "/study.html" ? "current" : "")
+            -page_is_current = (current_page == "/this_page.html" ? "current" : "")
+            %li{ :class => about_is_current }
+              %div=link "about", "/"
+            %li{ :class => work_is_current }
+              %div=link "work"
+            %li{ :class => study_is_current }
+              %div=link "study"
+            %li{ :class => "#{page_is_current} right" }
+              %div=link "this page"
+
+        =yield
+
+        %p.big.centered
+          ⚠
+          ☠
+          ☡
+          ☢
+          ☣
+          ⚡
+    %script{ :type => "text/javascript" }
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    %script{ :type => "text/javascript" }
+      try {
+      var pageTracker = _gat._getTracker("UA-10199672-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
