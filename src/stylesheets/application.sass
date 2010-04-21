@@ -5,7 +5,10 @@
 
 !page_width = 28em
 !inner_width = 87%
-!big = 1.5em
+!tab_width = 80px
+!tab_height = 30px
+
+!big = 2em
 !small = 0.7em
 !border_radius = 5px
 
@@ -35,9 +38,15 @@
   border-bottom-left-radius = !border_radius
 
 
+@font-face
+  font-family: "Linux Biolinum2"
+  src: url('/fonts/biolinum.ttf') format("truetype")
+
+
 body
-  font: 17pt/22pt "Helvetica Neue", Arial, sans-serif
-  font-weight: bold
+  font-family: "Linux Biolinum", "Linux Biolinum2", Verdana, Arial, sans-serif
+  font-size: 24px
+  //font-weight: bold
   letter-spacing: -0.75pt
   margin: 2em 2.3em
   color = !c_fg
@@ -46,8 +55,13 @@ body
 
 h1
   display: block
+  font-weight: bold
   font-size: 1em
   border-bottom = 1px "solid" !c_fg
+
+
+h1 .flourish
+  float: right
 
 
 a
@@ -64,10 +78,6 @@ a
 
 .big
   font-size = !big
-
-
-.centered
-  text-align: center
 
 
 .goback
@@ -95,6 +105,11 @@ a
   width = !inner_width
 
 
+#signature
+  text-align: center
+  margin: 2em
+
+
 =menu_hover
   height: 30px
   line-height: 20px
@@ -114,8 +129,8 @@ a
     li
       vertical-align: top
       display: inline-block
-      width: 100px
-      height: 30px
+      width = !tab_width
+      height = !tab_height
       line-height: 10px
       margin: 0
       div
@@ -132,14 +147,13 @@ a
           cursor: none
       a
         display: none
-        height: 30px
-        text-align: center
+        height: !tab_height
         padding-top: 12px
         color: inherit
     li.right
-      align: right
-      width: 150px
-      margin-left: 86px /* iiieks */
+      float: right
+      width = !tab_width * 1.5
+      text-align: right
       div
         +menu_border_right
 
