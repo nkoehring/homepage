@@ -13,38 +13,38 @@
     %meta{ :name => "geo.region", :content => "DE" }
     %link{ :href => "mailto:me[at]nkoehring.de", :rel => "author" }
     =stylesheets :media => :screen, :charset => "utf-8", :title => "Standard Layout"
-    -#%script{ :type => "text/javascript", :src => "/jquery.min.js" }
 
   %body
-    #page
-      #inner
-        #head
-          %ul
-            -about_is_current = (current_page == "/index.html" ? "current" : "")
-            -work_is_current = (current_page == "/work.html" ? "current" : "")
-            -study_is_current = (current_page == "/study.html" ? "current" : "")
-            -page_is_current = (current_page == "/this_page.html" ? "current" : "")
-            %li{ :class => about_is_current }
-              %div=link "about", "/"
-            %li{ :class => work_is_current }
-              %div=link "work"
-            %li{ :class => study_is_current }
-              %div=link "study"
-            %li{ :class => "#{page_is_current} right" }
-              %div=link "this page"
+    #page_wrapper
+      #page
+        #inner
+          #head
+            %ul
+              -about_is_current = (current_page == "/index.html" ? "current" : "")
+              -work_is_current = (current_page == "/work.html" ? "current" : "")
+              -study_is_current = (current_page == "/study.html" ? "current" : "")
+              -page_is_current = (current_page == "/this_page.html" ? "current" : "")
+              %li{ :class => about_is_current }
+                %div=link "about", "/"
+              %li{ :class => work_is_current }
+                %div=link "work"
+              %li{ :class => study_is_current }
+                %div=link "study"
+              %li{ :class => "#{page_is_current} right" }
+                %div=link "this page"
 
-        =yield
+          =yield
 
-        %p#signature{ :alt => "use more unicode (eg: What I like and what I am...)" }
-          &#9753;  <!-- reversed floral heart bullet //-->
-          &#9811;  <!-- pisces //-->
-          &#9835;  <!-- music //-->
-          &#9880;  <!-- nature //-->
-          &#57344; <!-- tux //-->
-          &#9733;  <!-- liberation //-->
-          &#9774;  <!-- peace //-->
-          &#9775;  <!-- YinYang //-->
-          &#10087; <!-- rotated floral heart bullet //-->
+          %p#signature{ :alt => "use more unicode (eg: What I like and what I am...)" }
+            &#9753;  <!-- reversed floral heart bullet //-->
+            &#9811;  <!-- pisces //-->
+            &#9835;  <!-- music //-->
+            &#9880;  <!-- nature //-->
+            &#57344; <!-- tux //-->
+            &#9733;  <!-- liberation //-->
+            &#9774;  <!-- peace //-->
+            &#9775;  <!-- YinYang //-->
+            &#10087; <!-- rotated floral heart bullet //-->
 
 
     / Sorry for this. It's because I like growing numbers, just like those browser game players…

@@ -1,7 +1,7 @@
-!c_fg = #AAA
-!c_bg = #333
+!c_fg = #BBB
+!c_bg = #3D3D3D
 !c_green = #0C0
-!c_lo = #686
+!c_lo = #797
 
 !page_width = 28em
 !inner_width = 87%
@@ -13,7 +13,8 @@
 !border_radius = 5px
 
 =border
-  border = 2px "solid" !c_green
+  border = 2px "solid" #060
+  border = 2px "solid" rgba(0, 204, 0, .2)
 
 =menu_border_left
   +border
@@ -50,7 +51,12 @@ body
   letter-spacing: -0.75pt
   margin: 2em 2.3em
   color = !c_fg
-  background-color = !c_bg
+  background:
+    color = !c_bg
+    image: url(/images/bg.jpg)
+    attachment: fixed
+    position: 0.5em 0
+    repeat: no-repeat
 
 
 h1
@@ -97,7 +103,28 @@ a
   margin-top: 2em
   padding: 0
   width = !page_width
-  border = 2px "solid" !c_green
+  +border
+  background:
+    color = transparent
+    image: url(/images/bg_effect.png)
+    attachment: fixed
+    position: 0.5em 0
+    repeat: no-repeat
+
+
+  -moz-box-shadow: 5px 5px 15px black, -5px -5px 15px black
+  -webkit-box-shadow: 5px 5px 15px black, -5px -5px 15px black
+
+
+#page_wrapper
+  margin: 0 auto
+  width = !page_width + 0.2em
+  background:
+    color = !c_bg
+    image: url(/images/bg_wrap.png)
+    attachment: fixed
+    position: 0 0
+    repeat: repeat
 
 
 #inner
@@ -131,25 +158,20 @@ a
       display: inline-block
       width = !tab_width
       height = !tab_height
-      line-height: 10px
+      line-height: 20px
       margin: 0
       div
         padding: 0 5px
-        height: 10px
+        height: 18px
         +menu_border_left
         cursor: pointer
-      &:hover
-        div
-          +menu_hover
       &.current
         div
           +menu_hover
           cursor: none
       a
-        display: none
         height: !tab_height
         padding-top: 12px
-        color: inherit
     li.right
       float: right
       width = !tab_width * 1.5
