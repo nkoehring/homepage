@@ -8,9 +8,8 @@
 !tab_width = 80px
 !tab_height = 30px
 
-!big = 2em
 !small = 0.7em
-!border_radius = 5px
+!border_radius = 0.3em
 
 =border
   border = 2px "solid" #060
@@ -40,14 +39,16 @@
 
 
 @font-face
-  font-family: "Tiny Linux Biolinum"
-  src: url('/fonts/tinybiolinum.ttf') format("truetype")
+  font-family: 'LinuxBiolinum'
+  src: url('/fonts/biolinum-webfont.eot') /* here you go f*ckin' IE */
+  src: local('☺'), url('/fonts/biolinum-webfont.woff') format('woff'), url('/fonts/biolinum-webfont.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
 
 
 body
-  font-family: "Linux Biolinum", "Linux Biolinum2", "Tiny Linux Biolinum", Verdana, Arial, sans-serif
+  font-family: "LinuxBiolinum", Verdana, Arial, sans-serif
   font-size: 24px
-  //font-weight: bold
   letter-spacing: -0.75pt
   margin: 2em 2.3em
   color = !c_fg
@@ -61,15 +62,24 @@ body
 img
   visibility: hidden
 
-h1
-  display: block
-  font-weight: bold
-  font-size: 1em
+.header_container
   border-bottom = 1px "solid" !c_fg
 
+h1
+  display: block
+  font-size: 1em
+  font-weight: bold
+  margin-bottom: -5px
+  padding: 0
 
-h1 .flourish
-  float: right
+  .flourish
+    float: right
+    margin-top: -2px
+
+  .penguin
+    float: right
+    margin-top: 30px
+    font-size: 6em
 
 
 a
@@ -82,10 +92,6 @@ a
 
   &:hover
     color = !c_green
-
-
-.big
-  font-size = !big
 
 
 .goback
@@ -141,7 +147,6 @@ a
 
 =menu_hover
   height: 30px
-  line-height: 20px
   a
     display: block
 
@@ -164,7 +169,7 @@ a
       margin: 0
       div
         padding: 0 5px
-        height: 18px
+        height: 17px
         +menu_border_left
         cursor: pointer
       &.current
@@ -173,7 +178,7 @@ a
           cursor: none
       a
         height: !tab_height
-        padding-top: 12px
+        padding-top: 13px
     li.right
       float: right
       width = !tab_width * 1.5

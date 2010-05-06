@@ -2,8 +2,7 @@
 %html
   %head
     %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
-    %title
-      Lair of NKoehring
+    %title< Lair of NKoehring
     %meta{ :name => "author", :content => "Norman K\303\266hring" }
     %meta{ :name => "DC.title", :content => "Norman K\303\266hring aka nkoehring" }
     /
@@ -33,6 +32,15 @@
               %li{ :class => "#{page_is_current} right" }
                 %div=link "this page"
 
+          .header_container
+            %h1
+              =@title
+              -# just a little baublery
+              -if @flourish == "penguin"
+                %span.penguin &#57344;
+              -else
+                %span.flourish=@flourish
+
           =yield
 
           %p#signature{ :alt => "use more unicode (eg: What I like and what I am...)" }
@@ -49,4 +57,12 @@
     / yeahahah... GoogleAnalytics my ass! I got the big brother now!
     :plain
       <img src="/cgi/bbla-logger.pl?dest=overall&referer=<!--#echo var='HTTP_REFERER'-->" alt="" >
+
+  /
+    credits
+    * to the makers of Staticmatic, HAML and SASS
+    * to Gabriel Shahzad ( http://herr-gabriel.de ) for using Biolinum on his page
+    * to Nico Hagenburger ( http://hagenburger.net ) for providing the sources of his blog
+    * to the identi.ca and twitter community for help and deliberation
+    * to my flat mates
 
