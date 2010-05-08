@@ -3,12 +3,14 @@
   %head
     %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
     %meta{ :name => "language", :content => "en_GB" }
-    %meta{ :name => "author", :content => "Norman K\303\266hring" }
-    %meta{ :name => "DC.title", :content => "Norman K\303\266hring aka nkoehring" }
+    %meta{ :name => "author", :content => "Norman Köhring" }
+    %meta{ :name => "DC.title", :content => "Norman Köhring aka nkoehring" }
+    %meta{ :name => "description", :content => "personal homepage of Norman Köhring" }
+    %meta{ :name => "keywords", :content => "personal homepage nkoehring pSy staticmatic ruby python programming computer webdesign nerd" }
     /
       GeoURL
-    %meta{ :name => "ICBM", :content => "51.3333, 12.4167" }
-    %meta{ :name => "geo.position", :content => "51.3333; 12.4167" }
+    %meta{ :name => "ICBM", :content => "51.332254, 12.362" }
+    %meta{ :name => "geo.position", :content => "51.332254, 12.362" }
     %meta{ :name => "geo.region", :content => "DE" }
     %link{ :href => "mailto:me[at]nkoehring.de", :rel => "author" }
     %title< Lair of NKoehring
@@ -29,13 +31,13 @@
                   %a{ :href => "/", :tabindex => 1, :accesskey => "a" } about
               %li{ :class => work_is_current }
                 %div
-                  %a{ :href => urlify("work"), :tabindex => 2, :accesskey => "w" } work
+                  %a{ :href => "/work.html", :tabindex => 2, :accesskey => "w" } work
               %li{ :class => study_is_current }
                 %div
-                  %a{ :href => urlify("study"), :tabindex => 3, :accesskey => "s" } study
+                  %a{ :href => "/study.html", :tabindex => 3, :accesskey => "s" } study
               %li{ :class => "#{page_is_current} right" }
                 %div
-                  %a{ :href => urlify("this page"), :tabindex => 4, :accesskey => "t" } this page
+                  %a{ :href => "/this_page.html", :tabindex => 4, :accesskey => "t" } this page
 
           .header_container
             %h1
