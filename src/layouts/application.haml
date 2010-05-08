@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-%html
+%html{ :lang => "en_GB" }
   %head
     %meta{ :content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type" }
-    %title< Lair of NKoehring
+    %meta{ :name => "language", :content => "en_GB" }
     %meta{ :name => "author", :content => "Norman K\303\266hring" }
     %meta{ :name => "DC.title", :content => "Norman K\303\266hring aka nkoehring" }
     /
@@ -11,6 +11,7 @@
     %meta{ :name => "geo.position", :content => "51.3333; 12.4167" }
     %meta{ :name => "geo.region", :content => "DE" }
     %link{ :href => "mailto:me[at]nkoehring.de", :rel => "author" }
+    %title< Lair of NKoehring
     =stylesheets :media => :screen, :charset => "utf-8", :title => "Standard Layout"
 
   %body
@@ -24,13 +25,17 @@
               -study_is_current = (current_page == "/study.html" ? "current" : "")
               -page_is_current = (current_page == "/this_page.html" ? "current" : "")
               %li{ :class => about_is_current }
-                %div=link "about", "/"
+                %div
+                  %a{ :href => "/", :tabindex => 1, :accesskey => "a" } about
               %li{ :class => work_is_current }
-                %div=link "work"
+                %div
+                  %a{ :href => urlify("work"), :tabindex => 2, :accesskey => "w" } work
               %li{ :class => study_is_current }
-                %div=link "study"
+                %div
+                  %a{ :href => urlify("study"), :tabindex => 3, :accesskey => "s" } study
               %li{ :class => "#{page_is_current} right" }
-                %div=link "this page"
+                %div
+                  %a{ :href => urlify("this page"), :tabindex => 4, :accesskey => "t" } this page
 
           .header_container
             %h1
@@ -56,7 +61,7 @@
 
     / yeahahah... GoogleAnalytics my ass! I got the big brother now!
     :plain
-      <img src="/cgi/bbla-logger.pl?dest=overall&referer=<!--#echo var='HTTP_REFERER'-->" alt="" >
+      <img src="/cgi/bbla-logger.pl?dest=overall&referer=<!--#echo var='HTTP_REFERER'-->" alt="BBLA-Logger" >
 
   /
     credits
