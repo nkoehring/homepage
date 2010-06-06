@@ -1,0 +1,37 @@
+@font-face { font-family: "LinuxBiolinum"; src: url('/fonts/biolinum-webfont.eot'); src: local("☺"), url('/fonts/biolinum-webfont.woff') format("woff"), url('/fonts/biolinum-webfont.ttf') format("truetype"); font-weight: normal; font-style: normal; }
+
+body { font-family: "LinuxBiolinum", Verdana, Arial, sans-serif; font-size: 24px; letter-spacing: -0.75pt; margin: 2em 2.3em; color: #bbbbbb; background-color: #3d3d3d; background-image: url(/images/bg.jpg); background-attachment: fixed; background-position: 0.5em 0; background-repeat: no-repeat; }
+
+img { visibility: hidden; }
+
+.header_container { border-bottom: 1px solid #bbbbbb; }
+
+h1 { display: block; font-size: 1em; font-weight: bold; margin-bottom: -5px; padding: 0; }
+h1 .flourish { float: right; margin-top: -2px; }
+h1 .penguin { float: right; margin-top: 30px; font-size: 6em; }
+
+a { color: #779977; text-decoration: none; white-space: nowrap; }
+a:visited { color: #779977; }
+a:hover { color: #00cc00; }
+
+.goback { font-size: 0.7em; align: left; float: right; clear: all; font-weight: default; }
+
+.old { text-decoration: line-through; }
+
+#page { margin: 0 auto; margin-top: 2em; padding: 0; width: 28em; border: 2px solid #006600; border: 2px solid rgba(0, 204, 0, 0.2); background-color: transparent; background-image: url(/images/bg_effect.png); background-attachment: fixed; background-position: 0.5em 0; background-repeat: no-repeat; -moz-box-shadow: 5px 5px 15px black, -5px -5px 15px black; -webkit-box-shadow: 5px 5px 15px black, -5px -5px 15px black; }
+
+#page_wrapper { margin: 0 auto; width: 28.2em; background-color: #3d3d3d; background-image: url(/images/bg_wrap.png); background-attachment: fixed; background-position: 0 0; background-repeat: repeat; }
+
+#inner { margin: 0 auto; width: 87%; }
+
+#signature { text-align: center; margin: 2em; }
+
+#head { margin: 0 auto; margin-bottom: 2em; padding: 0; }
+#head ul { display: block; margin: 0; padding: 0; height: 30px; }
+#head ul li { vertical-align: top; display: inline-block; width: 80px; height: 30px; line-height: 20px; margin: 0; }
+#head ul li div { padding: 0 5px; height: 17px; border: 2px solid #006600; border: 2px solid rgba(0, 204, 0, 0.2); border-top: none; border-left: none; -moz-border-radius-bottomright: 0.3em; -webkit-border-bottom-right-radius: 0.3em; border-bottom-right-radius: 0.3em; -moz-border-radius-bottomleft: 0.3em; -webkit-border-bottom-left-radius: 0.3em; border-bottom-left-radius: 0.3em; cursor: pointer; }
+#head ul li.current div { height: 30px; cursor: none; }
+#head ul li.current div a { display: block; }
+#head ul li a { height: 30px; padding-top: 13px; }
+#head ul li.right { float: right; width: 120px; text-align: right; }
+#head ul li.right div { border: 2px solid #006600; border: 2px solid rgba(0, 204, 0, 0.2); border-top: none; border-right: none; -moz-border-radius-bottomright: 0.3em; -webkit-border-bottom-right-radius: 0.3em; border-bottom-right-radius: 0.3em; -moz-border-radius-bottomleft: 0.3em; -webkit-border-bottom-left-radius: 0.3em; border-bottom-left-radius: 0.3em; }

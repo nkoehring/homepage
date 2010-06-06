@@ -1,47 +1,46 @@
-!c_fg = #BBB
-!c_bg = #3D3D3D
-!c_green = #0C0
-!c_lo = #797
+$c_fg: #bbbbbb
+$c_bg: #3d3d3d
+$c_green: #00cc00
+$c_lo: #779977
 
-!page_width = 28em
-!inner_width = 87%
-!tab_width = 80px
-!tab_height = 30px
-
-!small = 0.7em
-!border_radius = 0.3em
+$page_width: 28em
+$inner_width: 87%
+$tab_width: 80px
+$tab_height: 30px
+$small: 0.7em
+$border_radius: 0.3em
 
 =border
-  border = 2px "solid" #060
-  border = 2px "solid" rgba(0, 204, 0, .2)
+  border: 2px solid #006600
+  border: 2px solid rgba(0, 204, 0, 0.2)
 
 =menu_border_left
   +border
   border-top: none
   border-left: none
-  -moz-border-radius-bottomright = !border_radius
-  -webkit-border-bottom-right-radius = !border_radius
-  border-bottom-right-radius = !border_radius
-  -moz-border-radius-bottomleft = !border_radius
-  -webkit-border-bottom-left-radius = !border_radius
-  border-bottom-left-radius = !border_radius
+  -moz-border-radius-bottomright: $border_radius
+  -webkit-border-bottom-right-radius: $border_radius
+  border-bottom-right-radius: $border_radius
+  -moz-border-radius-bottomleft: $border_radius
+  -webkit-border-bottom-left-radius: $border_radius
+  border-bottom-left-radius: $border_radius
 
 =menu_border_right
   +border
   border-top: none
   border-right: none
-  -moz-border-radius-bottomright = !border_radius
-  -webkit-border-bottom-right-radius = !border_radius
-  border-bottom-right-radius = !border_radius
-  -moz-border-radius-bottomleft = !border_radius
-  -webkit-border-bottom-left-radius = !border_radius
-  border-bottom-left-radius = !border_radius
-
+  -moz-border-radius-bottomright: $border_radius
+  -webkit-border-bottom-right-radius: $border_radius
+  border-bottom-right-radius: $border_radius
+  -moz-border-radius-bottomleft: $border_radius
+  -webkit-border-bottom-left-radius: $border_radius
+  border-bottom-left-radius: $border_radius
 
 @font-face
-  font-family: 'LinuxBiolinum'
-  src: url('/fonts/biolinum-webfont.eot') /* here you go f*ckin' IE */
-  src: local('☺'), url('/fonts/biolinum-webfont.woff') format('woff'), url('/fonts/biolinum-webfont.ttf') format('truetype')
+  font-family: "LinuxBiolinum"
+  src: url('/fonts/biolinum-webfont.eot')
+  src: local("☺"), url('/fonts/biolinum-webfont.woff') format("woff"), url('/fonts/biolinum-webfont.ttf') format("truetype")
+  src: url('/fonts/biolinum-webfont.ttf') format("truetype")
   font-weight: normal
   font-style: normal
 
@@ -51,9 +50,9 @@ body
   font-size: 24px
   letter-spacing: -0.75pt
   margin: 2em 2.3em
-  color = !c_fg
+  color: $c_fg
   background:
-    color = !c_bg
+    color: $c_bg
     image: url(/images/bg.jpg)
     attachment: fixed
     position: 0.5em 0
@@ -63,93 +62,81 @@ img
   visibility: hidden
 
 .header_container
-  border-bottom = 1px "solid" !c_fg
+  border-bottom: 1px solid $c_fg
 
-h1
-  display: block
-  font-size: 1em
-  font-weight: bold
-  margin-bottom: -5px
-  padding: 0
-
-  .flourish
-    float: right
-    margin-top: -2px
-
-  .penguin
-    float: right
-    margin-top: 30px
-    font-size: 6em
-
+  h1
+    display: block
+    font-size: 1em
+    font-weight: lighter
+    margin-bottom: -5px
+    padding: 0
+    .flourish
+      float: right
+      margin-top: -2px
+    .penguin
+      float: right
+      margin-top: 30px
+      font-size: 6em
 
 a
-  color = !c_lo
+  color: $c_lo
   text-decoration: none
   white-space: nowrap
-
+  outline: 0px none
   &:visited
-    color = !c_lo
-
+    color: $c_lo
   &:hover
-    color = !c_green
-
+    color: $c_green
+  &:focus
+    color: white
 
 .goback
-  font-size = !small
+  font-size: $small
   align: left
   float: right
   clear: all
-  font-weight: default
-
+  font-weight: lighter
 
 .old
   text-decoration: line-through
-
 
 #page
   margin: 0 auto
   margin-top: 2em
   padding: 0
-  width = !page_width
+  width: $page_width
   +border
   background:
-    color = transparent
+    color: transparent
     image: url(/images/bg_effect.png)
     attachment: fixed
     position: 0.5em 0
     repeat: no-repeat
-
-
   -moz-box-shadow: 5px 5px 15px black, -5px -5px 15px black
   -webkit-box-shadow: 5px 5px 15px black, -5px -5px 15px black
 
-
 #page_wrapper
   margin: 0 auto
-  width = !page_width + 0.2em
+  width: $page_width + 0.2em
   background:
-    color = !c_bg
+    color: $c_bg
     image: url(/images/bg_wrap.png)
     attachment: fixed
     position: 0 0
     repeat: repeat
 
-
 #inner
   margin: 0 auto
-  width = !inner_width
-
+  width: $inner_width
 
 #signature
   text-align: center
   margin: 2em
 
-
 =menu_hover
   height: 30px
   a
     display: block
-
 
 #head
   margin: 0 auto
@@ -163,8 +150,8 @@ a
     li
       vertical-align: top
       display: inline-block
-      width = !tab_width
-      height = !tab_height
+      width: $tab_width
+      height: $tab_height
       line-height: 20px
       margin: 0
       div
@@ -177,12 +164,11 @@ a
           +menu_hover
           cursor: none
       a
-        height: !tab_height
+        height: $tab_height
         padding-top: 13px
     li.right
       float: right
-      width = !tab_width * 1.5
+      width: $tab_width * 1.5
       text-align: right
       div
         +menu_border_right
-
