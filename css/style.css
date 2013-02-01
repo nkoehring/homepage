@@ -6,9 +6,9 @@
 }
 
 body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: none;
-  font: 18px/1.5em 'Antic', Cambria, Georgia, serif;
+  font-family: Antic, sans-serif;
+  font-size: 10px;
+  line-heigth: 1.5em;
   color: white;
   width: 100%;
   margin: 0;
@@ -17,20 +17,17 @@ body {
   background-size: cover;
 }
 
-#content {
+.content {
   margin-top: 10%;
   border-right: 20px solid rgba(0,0,0,.2);
   background: rgba(120, 20, 5,.7);
   padding: 2em;
+  font-size: 1.8em; /* 18px */
   text-shadow: 1px 2px 2px black;
 }
 
-#content p em {
+.content p em {
   font-style: normal;
-}
-
-#content, footer {
-  width: 48%;
 }
 
 footer ol {
@@ -59,28 +56,45 @@ footer ol li a:hover {
 /* icons from
  * http://icons.mysitemyway.com/gallery/post/black-ink-grunge-stamps-textures-icons-social-media-logos
  */
-footer ol li.twitter a {
+footer .twitter a {
   background-image: url(/img/icons/black-ink-grunge/twitter.png);
 }
-footer ol li.facebook a {
+footer .facebook a {
   background-image: url(/img/icons/black-ink-grunge/facebook.png);
 }
-footer ol li.rss a {
+footer .rss a {
   background-image: url(/img/icons/black-ink-grunge/rss.png);
 }
-footer ol li.mail a {
+footer .mail a {
   background-image: url(/img/icons/black-ink-grunge/mail.png);
 }
-footer ol li.blog a {
-  background-image: url(/img/icons/black-ink-grunge/blog.png);
+footer .blog a {
+background-image: url(/img/icons/black-ink-grunge/blog.png);
 }
-footer ol li.github a {
+footer .github a {
   background-image: url(/img/icons/black-ink-grunge/github.png);
 }
 
 
 /* media queries */
-@media screen and (orientation:portrait) {
-  header, #content, footer { width: auto; border-right: none; }
-  footer ol { text-align: center; }
+@media screen and (min-width:601px) {
+  .page {
+    width: 60em;
+  }
+}
+@media screen and (min-width:401px) and (max-width:600px) {
+  .page {
+    width: 40em;
+  }
+}
+@media screen and (max-width:400px) {
+  .page {
+    width: auto;
+  }
+  .content {
+    border-right: none;
+  }
+  footer ol {
+    text-align: center;
+  }
 }
