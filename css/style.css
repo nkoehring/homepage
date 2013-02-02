@@ -105,12 +105,6 @@ footer .github a {
   .page { width: 70em; }
 }
 
-@media screen and (min--moz-device-pixel-ratio: 2),
-       screen and (-o-min-device-pixel-ratio: 2/1),
-       screen and (-webkit-min-device-pixel-ratio: 2),
-       screen and (min-device-pixel-ratio: 2) {
-}
-
 @media screen and (min-width:1281px) {
   .page { width: 120em; }
     h1 { font-size: 1.8em; }
