@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Antic';
+  font-family: 'Arual';
   font-style: normal;
-  font-weight: 400;
-  src: local('Antic'), local('Antic-Regular'), url('/css/antic.woff') format('woff');
+  font-weight: 100;
+  src: local('Arual'), url('/css/arual.woff') format('woff');
 }
 
 body {
-  font-family: Antic, sans-serif;
-  font-size: 10px;
-  line-heigth: 1.5em;
+  font-family: sans;
+  font-size: 20px;
+  line-heigth: 1.0em;
   color: white;
   width: 100%;
   margin: 0;
@@ -18,7 +18,8 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-family: Arual;
+  font-size: 3rem;
   margin:0;
 }
 
@@ -27,7 +28,7 @@ h1 {
   border-right: 20px solid rgba(0,0,0,.2);
   background: rgba(120, 20, 5,.7);
   padding: 2em;
-  font-size: 1.8em; /* 18px */
+  font-size: 1.0rem; /* 20px */
   text-shadow: 1px 2px 2px black;
 }
 
@@ -85,11 +86,11 @@ footer .github a {
   background-image: url(/img/icons/black-ink-grunge/github.png);
 }
 
-
 /* media queries */
 
 /* may not work for apple mobile devices */
 @media screen and (max-width:401px) and (orientation:portrait) {
+  h1 { font-size: 1.5rem; }
   .content { border-right: none; }
 }
 @media screen and (max-width:600px) and (orientation:portrait) {
@@ -102,11 +103,11 @@ footer .github a {
 }
 
 @media screen and (min-width:601px) and (orientation:landscape) {
-  .page { width: 70em; }
+  .page { width: 80%; }
 }
 
 @media screen and (min-width:1281px) {
-  .page { width: 120em; }
-    h1 { font-size: 1.8em; }
-    .content { font-size: 2.2em; }
+  .page { width: 40%; }
+    h1 { font-size: 5rem; }
+    p { font-size: 1.4rem; line-height: 1.5em; }
 }
