@@ -81,13 +81,13 @@ body > header h1 > span {
   color: #FFF;
   font-size: 2rem;
   font-weight: 100;
-  transition: transform .5s ease;
 }
 
 body > aside,
 #main {
   display: inline-block;
   vertical-align: top;
+  transition: transform .2s ease;
 }
 
 body > aside {
@@ -114,10 +114,10 @@ body > aside > section > header > h1 {
 #main {
   width: 65%;
   vertical-align: top;
+  transform-origin: center left;
 }
 #main.wrapped {
   transform: translate(50%) rotateY(45deg);
-  transform-origin: center left;
   border-top: 1px solid #EEE;
   border-bottom: 1px solid #EEE;
 }
