@@ -101,6 +101,7 @@ body > aside ol,
 body > aside ul {
   margin: 0;
   padding: 0;
+  line-height: 2.1rem;
 }
 body > aside li {
   list-style: none;
@@ -108,6 +109,7 @@ body > aside li {
 body > aside > section > header > h1 {
   margin: 0;
   margin-top: 1em;
+  margin-bottom: .5em;
   font-size: 1.5rem;
 }
 
@@ -115,6 +117,7 @@ body > aside > section > header > h1 {
   width: 65%;
   vertical-align: top;
   transform-origin: center left;
+  text-align: justify;
 }
 #main.wrapped {
   transform: translate(50%) rotateY(45deg);
@@ -132,6 +135,7 @@ body > aside > section > header > h1 {
   display: inline-block;
   vertical-align: baseline;
   font-size: 1rem;
+  margin-top: 0;
 }
 #main > section > p {
   margin: .5rem 0;
@@ -170,6 +174,10 @@ body > footer {
     background-size: 180%;
   }
 
+  #main > section > header > h1,
+  #main > section > header > h2 {
+    display: block;
+  }
   body > header h1 > span {
     display: block;
     margin-left: -.3rem;
@@ -194,7 +202,7 @@ body > footer {
     margin: 0;
     margin-left: 2%;
     width: 96%;
-    text-align: justify;
+    text-align: left;
   }
   #footernav li {
     display: block;
