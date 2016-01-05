@@ -219,4 +219,7 @@ body > footer {
     margin-left: 5%;
     width: 90%;
   }
+  #main.wrapped {
+    margin-left: 10%;
+  }
 }
