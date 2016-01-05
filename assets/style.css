@@ -194,6 +194,7 @@ body > footer {
     margin: 0;
     margin-left: 2%;
     width: 96%;
+    text-align: justify;
   }
   #footernav li {
     display: block;
