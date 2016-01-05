@@ -16,7 +16,7 @@
 
     var x = Math.round((evt.x - elX) * 100.0 / elW),
         y = Math.round((evt.y - elY) * 100.0 / elH),
-        xDelta = 50-x,
+        xDelta = 100-x,
         yDelta = 40+y/5
 
     el.style.backgroundPosition = xDelta+"px "+yDelta+"%"
