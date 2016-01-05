@@ -15,8 +15,8 @@
       if(trigger--) return
       if(trigger <= 0) trigger = 10
 
-      var x = Math.round((evt.x - elX) * 100.0 / elW),
-          y = Math.round((evt.y - elY) * 100.0 / elH),
+      var x = Math.round((evt.layerX - elX) * 100.0 / elW),
+          y = Math.round((evt.layerY - elY) * 100.0 / elH),
           xDelta = 100-x,
           yDelta = 40+y/5
 

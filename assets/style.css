@@ -197,7 +197,7 @@ body > footer {
     position: absolute;
     width: 160px;
     padding-right: 0;
-    transform: translateX(-160px);
+    transform: translateX(-250px);
   }
   body > aside.open {
     transform: translateX(0px);
@@ -214,3 +214,9 @@ body > footer {
   }
 }
 
+@media screen and (max-width:359px) {
+  #main {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
