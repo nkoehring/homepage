@@ -33,6 +33,7 @@ body {
   padding: 0;
   background: white;
   border: 1px dotted #CCC;
+  perspective: 1000px;
 }
 
 a {
@@ -70,8 +71,21 @@ body > header h1 > span {
   color: #999;
 }
 
+#asidetoggle {
+  display: none;
+  float: left;
+  border: none;
+  background-color: #494949;
+  margin-top: -1.2rem;
+  padding: .5rem 1rem;
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 100;
+  transition: transform .5s ease;
+}
+
 body > aside,
-body > #main {
+#main {
   display: inline-block;
   vertical-align: top;
 }
@@ -99,6 +113,13 @@ body > aside > section > header > h1 {
 
 #main {
   width: 65%;
+  vertical-align: top;
+}
+#main.wrapped {
+  transform: translate(50%) rotateY(45deg);
+  transform-origin: center left;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
 }
 #main > section > header > h1 {
   display: inline-block;
@@ -131,3 +152,51 @@ body > footer {
   display: inline;
   margin: 0 1em;
 }
+
+/* media queries */
+@media screen and (max-width:960px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 0;
+    border: none;
+  }
+}
+
+@media screen and (max-width:639px) {
+  body > header {
+    padding: 0;
+    height: 160px;
+    background-size: 180%;
+  }
+
+  body > header h1 > span {
+    display: block;
+    margin-left: -.3rem;
+    margin-bottom: -3rem;
+    color: #777;
+  }
+
+  #asidetoggle {
+    display: inline-block;
+  }
+  body > aside {
+    position: absolute;
+    width: 160px;
+    padding-right: 0;
+    transform: translateX(-160px);
+  }
+  body > aside.open {
+    transform: translateX(0px);
+  }
+
+  #main {
+    margin: 0;
+    margin-left: 2%;
+    width: 96%;
+  }
+  #footernav li {
+    display: block;
+  }
+}
+
