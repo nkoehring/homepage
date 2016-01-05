@@ -36,6 +36,11 @@ body {
   perspective: 1000px;
 }
 
+body.legal {
+  padding: 1em;
+  text-align: justify;
+}
+
 a {
   color: inherit;
   text-decoration: none;
