@@ -88,6 +88,13 @@ body > header h1 > span {
   font-weight: 100;
 }
 
+#about .u-photo {
+  float: left;
+  width: 100px;
+  margin-top: -2em;
+  margin-left: 1em;
+}
+
 body > aside,
 #main {
   display: inline-block;
