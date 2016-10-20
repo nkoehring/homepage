@@ -17,7 +17,114 @@
         <link rel="author" href="https://koehr.in" />
         <link rel="alternate" type="application/rss+xml"
            title="RSS" href="https://log.koehr.in/feed.rss" />
-        <link rel="stylesheet" href="/assets/style.css" />
+        <style>
+          @font-face {
+              font-family: nanumbrushscript;
+              src: url('/assets/nanumbrushscript-webfont.woff2') format('woff2'),
+                   url('/assets/nanumbrushscript-webfont.woff') format('woff');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: iwona;
+              src: url('/assets/iwona-bold-webfont.woff2') format('woff2'),
+                   url('/assets/iwona-bold-webfont.woff') format('woff');
+              font-weight: bold;
+              font-style: normal;
+          }
+
+          @font-face {
+              font-family: iwona;
+              src: url('/assets/iwona-regular-webfont.woff2') format('woff2'),
+                   url('/assets/iwona-regular-webfont.woff') format('woff');
+              font-weight: normal;
+              font-style: normal;
+          }
+
+          body {
+            font-family: iwona, sans;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 1.5em;
+            color: #333;
+            width: 960px;
+            margin: 0 auto;
+            padding: 0;
+            background: white;
+            border: 1px dotted #CCC;
+            perspective: 1000px;
+          }
+
+          body.legal {
+            padding: 1em;
+            text-align: justify;
+          }
+
+          a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(33,33,33,.5);
+          }
+
+          body > header {
+            display: block;
+            text-align: center;
+            background: #4C4C4C url(/assets/title_bg.jpg) center no-repeat;
+            background-size: cover;
+            color: #FFF;
+            padding: 2.8rem 0;
+            height: 108px;
+            transition: background-position .5s ease;
+          }
+          body > header h1,
+          body > header h2 {
+            margin: 0;
+            line-height: 1em;
+            transition: margin .5s ease;
+          }
+          body > header h1 {
+            font-size: 4rem;
+          }
+          body > header h2 {
+            margin-top: 1rem;
+            font-size: 1.8rem;
+            font-weight: normal;
+            font-family: nanumbrushscript;
+          }
+          #asidetoggle {
+            display: none;
+          }
+
+          body > aside,
+          #main {
+            display: inline-block;
+            vertical-align: top;
+          }
+          body > aside {
+            width: 25%;
+            text-align: right;
+            font-size: 1rem;
+            padding-right: 4%;
+          }
+          body > aside li {
+            list-style: none;
+          }
+          #main {
+            width: 65%;
+            vertical-align: top;
+            transform-origin: center left;
+            text-align: justify;
+          }
+          body > footer {
+            margin: 5rem 0;
+            text-align: center;
+          }
+          #footernav li {
+            display: inline;
+            margin: 0 1em;
+          }
+        </style>
 
     </head>
     <body class="h-card">
@@ -164,6 +271,7 @@
         </nav>
       </footer>
 
-      <script src="header.js"></script>
+      <link rel="stylesheet" href="/assets/style.css" />
+      <script async src="header.js"></script>
     </body>
 </html>
