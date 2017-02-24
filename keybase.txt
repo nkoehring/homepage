@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/koehr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://koehr.in
+  * I am koehr (https://keybase.io/koehr) on keybase.
+  * I have a public key ASDPasu6nAlqAUbMaT0ob__xkvsskGNKgVVkoLnbfHu2aAo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120cf6acbba9c096a0146cc693d286ffff192fb2c90634a815564a0b9db7c7bb6680a",
+            "host": "keybase.io",
+            "kid": "0120cf6acbba9c096a0146cc693d286ffff192fb2c90634a815564a0b9db7c7bb6680a",
+            "uid": "b1f187b5d80936cc7f83fff81663f900",
+            "username": "koehr"
+        },
+        "service": {
+            "hostname": "koehr.in",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1487895685,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1487895673,
+        "hash": "c4358c4df202ca4f9529cd646ddb22a57da0dcfd966039806553203a06d535299d339fe4b1d5907196471ab03569c913da9fb184118ff23ec46fc7250656dd9b",
+        "seqno": 918858
+    },
+    "prev": "16428266cae5461cf12a53d4f4ba27f0b42c0accc44c7e1f10bc042f3effeb24",
+    "seqno": 41,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgz2rLupwJagFGzGk9KG//8ZL7LJBjSoFVZKC523x7tmgKp3BheWxvYWTFAu57ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwY2Y2YWNiYmE5YzA5NmEwMTQ2Y2M2OTNkMjg2ZmZmZjE5MmZiMmM5MDYzNGE4MTU1NjRhMGI5ZGI3YzdiYjY2ODBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwY2Y2YWNiYmE5YzA5NmEwMTQ2Y2M2OTNkMjg2ZmZmZjE5MmZiMmM5MDYzNGE4MTU1NjRhMGI5ZGI3YzdiYjY2ODBhIiwidWlkIjoiYjFmMTg3YjVkODA5MzZjYzdmODNmZmY4MTY2M2Y5MDAiLCJ1c2VybmFtZSI6ImtvZWhyIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJrb2Voci5pbiIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE4In0sImN0aW1lIjoxNDg3ODk1Njg1LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0ODc4OTU2NzMsImhhc2giOiJjNDM1OGM0ZGYyMDJjYTRmOTUyOWNkNjQ2ZGRiMjJhNTdkYTBkY2ZkOTY2MDM5ODA2NTUzMjAzYTA2ZDUzNTI5OWQzMzlmZTRiMWQ1OTA3MTk2NDcxYWIwMzU2OWM5MTNkYTlmYjE4NDExOGZmMjNlYzQ2ZmM3MjUwNjU2ZGQ5YiIsInNlcW5vIjo5MTg4NTh9LCJwcmV2IjoiMTY0MjgyNjZjYWU1NDYxY2YxMmE1M2Q0ZjRiYTI3ZjBiNDJjMGFjY2M0NGM3ZTFmMTBiYzA0MmYzZWZmZWIyNCIsInNlcW5vIjo0MSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBNF0PoOa84/XUbP4vp7s1j7/tihRIvzcsA2gKflDv7BhGGKe4TJvHrushx9mtkiH0BPMhjqt5FqPM2om+h55sPqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg6O9ba8oibSZEPYP0s9PGuV850d6sMdUGy5qC47ZwZzujdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/koehr
+
+==================================================================
