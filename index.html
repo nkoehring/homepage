@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>koehr — programmer and engineer based in Berlin</title>
@@ -12,7 +12,7 @@
         <meta name="geo.region" content="DE" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0,
-        maximum-scale=10.0, user-scalable=yes" />
+        maximum-scale=1.0, user-scalable=no" />
 
         <link rel="author" href="https://koehr.in" />
         <link rel="alternate" type="application/rss+xml"
@@ -55,7 +55,7 @@
             margin: 0 auto;
             padding: 0;
             background: white;
-            border: 1px dotted #CCC;
+            border: 1px solid #CCC;
             perspective: 1000px;
           }
 
@@ -123,13 +123,11 @@
             margin: 5rem 0;
             text-align: center;
           }
-          #footernav div {
+          nav.footernav li {
             display: inline;
             margin: 0 1em;
           }
         </style>
-
-        <script async src="https://getmirrorshades.com/agent.js" data-siteId="MA-7WRHAW-VBY"></script>
     </head>
     <body class="h-card">
 
@@ -145,21 +143,19 @@
         <section id="about">
           <header>
             <h1>about</h1>
-            <img alt="picture of me" class="u-photo" src="https://avatars3.githubusercontent.com/u/246402?v=3&s=100">
+            <img class="u-photo" src="https://avatars3.githubusercontent.com/u/246402?v=3&s=100">
           </header>
           <nav id="mainnav">
-            <div class="blog"><a target="_blank" href="https://log.koehr.in" title="blog" rel="noopener me">blog</a></div>
-            <div class="twitter"><a target="_blank" href="https://twitter.com/koehr_in" title="twitter" rel="noopener me">twitter</a></div>
-            <div class="github"><a target="_blank" href="https://github.com/nkoehring" title="github" rel="noopener me">github</a></div>
-            <div class="appnet"><a target="_blank" href="https://alpha.app.net/koehr" title="app.net" rel="noopener me">app.net</a></div>
-            <div class="til"><a target="_blank" href="https://github.com/nkoehring/TIL" title="today I learned" rel="noopener">today I learned</a></div>
-            <div class="ama"><a target="_blank" href="https://git.koehr.in/koehr/AMA" title="ask me anything" rel="noopener">ask me anything</a></div>
-            <div class="mail u-email"><a href="mailto:n[at]koehr.in" title="mail" rel="noopener me">mail</a></div>
-            <div class="location">
-              <a href="https://map.what3words.com/control.being.fuzzy" class="what3words" title="w3w:control.being.fuzzy">
+            <li class="blog"><a target="_blank" href="https://log.koehr.in" title="blog" rel="noopener me">blog</a></li>
+            <li class="twitter"><a target="_blank" href="https://twitter.com/koehr_in" title="twitter" rel="noopener me">twitter</a></li>
+            <li class="github"><a target="_blank" href="https://github.com/nkoehring" title="github" rel="noopener me">github</a></li>
+            <li class="til"><a target="_blank" href="https://github.com/nkoehring/TIL" title="today I learned" rel="noopener">today I learned</a></li>
+            <li class="mail u-email"><a href="mailto:n[at]koehr.in" title="mail" rel="noopener me">mail</a></li>
+            <li class="location">
+              <a target="_blank" href="https://map.what3words.com/sends.youngest.tactical" class="what3words" title="w3w:sends.youngest.tactical" rel="noopener">
                 <span class="p-locality">Berlin</span>, <span class="p-country-name">Germany</span>
               </a>
-            </div>
+            </li>
           </nav>
         </section>
 
@@ -179,7 +175,7 @@
           <ol>
             <li>JavaScript &amp; Ruby</li>
             <li>CSS3, HTML5</li>
-            <li>Shell, C, Python</li>
+            <li>Shell, Rust</li>
           </ol>
         </section>
 
@@ -188,11 +184,12 @@
             <h1>other interests</h1>
           </header>
           <ul>
+            <li>Open Web</li>
+            <li>Open Data</li>
+            <li>Decentralization</li>
             <li>Archery</li>
-            <li>Meditation</li>
-            <li>Philosophy</li>
             <li>Photography</li>
-            <li>Politics</li>
+            <li>Philosophy</li>
             <li>Linguistics</li>
           </ul>
         </section>
@@ -206,21 +203,23 @@
             <h2>Interesting things to know about me</h2>
           </header>
           <p class="p-note">
-            Hi there! I am a freelancing <a rel="me" title="Do you want to hire me?" href="mailto:n[at]koehr.in">programmer</a>,
+            Hi there! I am a <a rel="me" title="Do you want to hire me?" href="mailto:n[at]koehr.in">programmer</a>,
             <a rel="noopener me" target="_blank" title="see my Github profile" href="https://github.com/nkoehring">OpenSource enthusiast</a> and
             <a rel="noopener" target="_blank" title="Read here to learn more about this word!" href="https://en.wikipedia.org/wiki/Hacker_culture">hacker</a>
             based in Berlin, Germany.
           </p>
           <p class="p-note">
-            I call myself a code artist because programming can and should be a
-            creative process – and that is what I strive for when programming!
+            I call myself a code artist because programming can and should be
+            seen as a creative process – and that is what I strive for!
             Just like a painter loves to paint or a musician loves to sing
             or play an instrument, I love to think about concepts and patterns,
-            and craft pieces of art with source code.
+            and craft pieces of art with code.
           </p>
-          <p class="p-note">
-            Do you want to create something beautiful and make the world a
-            better place? I'd love to help you!
+          <p class="p-note hidden">
+            I'm working for <a rel="noopener" target="_blank" title="Homepage of Wunderdog" href="https://wunder.dog">Wunderdog</a>.
+            We design and develop digital experiences. Do you want to
+            create something beautiful and make the world a better place? We'd
+            love to help you!
             <a title="write a mail" href="mailto:n[at]koehr.in">Leave me a message</a>
             any time and I will come back to you as soon as possible.
           </p>
@@ -263,19 +262,24 @@
       </div>
 
       <footer>
-        <nav id="footernav">
-          <div rel="alternate" class="feed"><a rel="noopener" target="_blank" href="https://log.koehr.in/atom.xml" title="blog feed">feed:log.koehr.in</a></div>
-          <div rel="me" class="github"><a rel="noopener" target="_blank" href="https://github.com/nkoehring" title="github">github:nkoehring</a></div>
-          <div rel="me" class="twitter"><a rel="noopener" target="_blank" href="https://twitter.com/koehr_in" title="twitter">twitter:@koehr_in</a></div>
-          <div rel="me" class="mail"><a href="mailto:n[at]koehr.in" title="mail">n[at]koehr.in</a></div>
-          <hr>
-          <div class="disclaimer"><a href="/disclaimer.html" title="disclaimer">Disclaimer</a></div>
-          <div class="impressum"><a href="/impressum.html" title="impressum">Impressum</a></div>
-          <div class="datenschutz"><a href="/datenschutz.html" title="datenschutz">Datenschutz</a></div>
+        <nav class="footernav">
+          <li rel="alternate" class="feed"><a rel="noopener" target="_blank" href="https://log.koehr.in/atom.xml" title="blog feed">feed:log.koehr.in</a></li>
+          <li rel="me" class="github"><a rel="noopener" target="_blank" href="https://github.com/nkoehring" title="github">github:nkoehring</a></li>
+          <li rel="me" class="twitter"><a rel="noopener" target="_blank" href="https://twitter.com/koehr_in" title="twitter">twitter:@koehr_in</a></li>
+          <li rel="me" class="mail"><a href="mailto:n[at]koehr.in" title="mail">n[at]koehr.in</a></li>
+        </nav>
+        <p class="footernav">
+          <a rel="copyright noopener" target="_blank" href="https://github.com/nkoehring/homepage/blob/master/LICENSE" title="ISC licensed">©2018 Norman Köhring</a>
+        </p>
+        <nav class="footernav">
+          <li class="disclaimer"><a href="/disclaimer.html" title="disclaimer">Disclaimer</a></li>
+          <li class="impressum"><a href="/impressum.html" title="impressum">Impressum</a></li>
+          <li class="datenschutz"><a href="/datenschutz.html" title="datenschutz">Datenschutz</a></li>
+          <li rel="source" class="github"><a rel="noopener" target="_blank" href="https://github.com/nkoehring/homepage" title="source code on github">Source</a></li>
         </nav>
       </footer>
 
-      <link async rel="stylesheet" href="/assets/style.css" />
-      <script defer async src="header.js"></script>
+      <link rel="stylesheet" href="/assets/style.css" />
+      <script async src="header.js"></script>
     </body>
 </html>

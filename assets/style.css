@@ -116,6 +116,9 @@ body > aside > section > header > h1 {
     width: 96%;
     text-align: left;
   }
+  #footernav li {
+    display: block;
+  }
 }
 
 @media screen and (max-width:359px) {
