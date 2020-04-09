@@ -1,0 +1,79 @@
+body {
+    font-size: 250%;
+    font-family: monospace;
+    background-color: black;
+    color: #FDFDED;
+}
+
+p {
+    font-size: 125%;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+em {
+    color: yellow;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+li {
+    font-size: 125%;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+    line-height: 1.8em;
+    list-style-type: circle;
+    text-align: left;
+}
+
+a {
+  display: block;
+  float: right;
+  color: gray;
+  font-size: 50%;
+}
+
+.highlight .nt {
+  color: lightblue;
+}
+
+#Slide__AboutMe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #251e14 url(norman.jpg) center right no-repeat;
+}
+
+#Slide__AboutMe figure {
+  display: none;
+}
+#Slide__AboutMe h1 {
+  margin-top: 1em;
+}
+
+#Slide__AboutMe ul {
+  max-width: 24em;
+  padding-left: 5em;
+}
+
+#Slide__Police pre {
+  font-size: 50%;
+}
+
+#Slide__ThankYou {
+  width: 80vw;
+}
+#Slide__ThankYou a {
+  display: inline;
+  font-size: 100%;
+}
+
