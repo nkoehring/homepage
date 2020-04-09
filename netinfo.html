@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Connection Info — koehr</title>
+
+    <meta name="author" content="Norman Köhring" />
+    <meta name="DC.title" content="Connection Info — koehr" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="author" href="https://koehr.in" />
+    <style>
+      body {
+        font-family: monospace;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 1.5em;
+        color: #AAA;
+        max-width: 960px;
+        margin: 2em auto 0;
+        padding: 0;
+        background: black;
+      }
+      a {
+        color: white;
+      }
+      main {
+        display: none;
+      }
+      #support {
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Network information</h1>
+      <p>
+        In 2017 the Network Information API was proposed to give web applications insights into the devices network connectivity and speed.
+        With Chrome for Android 78 and Firefox for Android 68, as well as Chrome 79 for desktop, a large chunk of browsers support this API already.
+        You can learn more about it on <a target="_blank" title="WICG on Github" rel="noopener" href="https://wicg.github.io/netinfo/">wicg.github.io/netinfo</a>.
+      </p>
+    </header>
+
+    <noscript>Without Javascript, the Network API doesn't work for sure. You have either disabled Javascript or your browser doesn't support it.</noscript>
+    <main>
+      <p id="support">Checking if your browser supports the Network API</p>
+      <pre id="info"></pre>
+    </main>
+
+    <script>
+      const mainEl = document.querySelector('main')
+      const supportEl = document.querySelector('#support')
+      const infoEl = document.querySelector('#info')
+      const isSupported = ('connection' in navigator)
+
+      mainEl.style.display = 'block'
+      supportEl.innerText = isSupported ? 'Your browser supports the Connection API' : 'Your browser does not support the Connection API.'
+
+      function update () {
+        const info = navigator.connection
+
+        infoEl.innerText = `
+connection type: ${info.type}
+effective type: ${info.effectiveType}
+speed: ${info.downlink} Mbit
+nax speed: ${info.downlinkMax} Mbit
+round-trip: ${info.rtt} ms
+data saver: ${info.saveDate}
+        `
+      }
+
+      if (isSupported) {
+        navigator.connection.onchange = update
+        update()
+      }
+    </script>
+  </body>
+</html>
